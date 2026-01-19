@@ -142,4 +142,3 @@ MIT License - Feel free to use, modify, and distribute.
 ## Acknowledgments
 
 - [Three.js](https://threejs.org/) - The 3D library these skills document
-- [Claude Code](https://claude.ai/code) - The AI coding assistant these skills enhance
